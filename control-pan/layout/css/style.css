@@ -1,0 +1,243 @@
+body{
+    background-color: #f4f4f4;
+    text-transform: capitalize;
+    }
+
+ h1{
+    color: #767f89;
+    margin: 4rem 0 1rem;
+ }
+
+.login{
+    width:40vw;
+    margin:200px auto;
+}
+
+.login input{
+    margin-bottom: 10px;
+}
+
+.login .form-control{
+    background-color: #e4e4e4
+}
+
+.login h4{
+    color: #888
+}
+
+@media (min-width : 990px){
+    .collapse{
+        position: relative;
+        .dropdown {
+            position: absolute;
+            right: 100px;
+        } 
+    }
+}
+.navbar{
+    position: sticky;
+    padding:0;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 2;
+}
+
+.navbar .nav-item .nav-link{
+    text-transform: uppercase;
+     
+}
+
+.table thead tr th{
+    background-color: #555;
+    color: #eee;
+    text-transform: capitalize;
+
+}
+
+.table tr td .activate{
+    margin-left: 4px;
+}
+.table tr td a{
+    width: 90px;
+}  
+@media (max-width : 990px){
+    .table tr td a{
+        margin-bottom: 3px;
+        width: 6vw;
+    }  
+}
+
+/* dashbord start */
+.latest {
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.states .state{
+    border: 1px solid #bbb;
+    padding: 20px;
+    font-size: 15px;   
+    color:#535c68;
+    border-radius: 6px;
+}
+@media (max-width : 990px){
+    .states .state{
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+}
+.latest .states .total-member{
+    background-color: #c7ecee;
+}
+.latest .states .pending{
+    background-color: #f6e58d;
+}
+.latest .states .items{
+    background-color: #bbff9e;
+}
+.latest .states .comments{
+    background-color: #ffafaf;
+}
+.states .state span{
+    display: block;
+    font-size: 60px;
+}
+.states .state span a{
+    text-decoration: none;
+    color:#535c68;
+}
+.states .state span a:hover{
+    color:#95afc0;
+}
+.latest .card .card-header i{
+    margin-right: 10px;
+}
+
+.latest .card .card-body{
+    padding: 5px;
+}
+.latest .card .card-body ul{
+    padding: 0;
+    margin: 0;
+   
+}
+.latest .card .card-body ul :nth-child(odd):not(a, i){
+    background-color: #eee;
+}
+.latest .card .card-body ul li{
+    padding: 4px;
+    
+}
+.latest .card .card-body ul li a{
+    padding: 0 2px;
+    margin: 0 1px; 
+    width: 78px; 
+}
+@media (max-width : 400px){
+    .latest .card .card-body ul li a{
+        padding: 0;
+        margin: 0; 
+        width: 18.5vw;
+    }
+    .latest .card .card-body ul li a i{
+        padding: 0 3px;
+        margin: 0 2px; 
+        display: none;
+    }
+}
+
+.com-box .member {
+    float: left;
+    font-weight: bold;
+    margin: 0px 25px 0 0px;
+    top: 5px;
+    color: #6d6a6a;
+    position: relative;
+}
+
+/* Style for the comment */
+.com-box .comment {
+    position: relative;
+    left: 45px;
+    bottom: 0px;
+    min-height: 4rem;
+    padding: 5px;
+    width: calc(91% - 80px);
+    background-color: #efefef;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #555;
+    border: 1px solid #ccc;
+    float: left;  
+}
+.com-box .comment::before{
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: 4px;
+    border-width: 12px;
+    border-style: solid;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: #e7e5e5;
+
+}
+/* dashbord end */
+/* Categories start*/
+.categories .card{
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.categories .card .card-header a{
+        margin-left: 6px;
+        text-decoration: none;
+        color: #666;
+    }
+.categories .card .card-header .active{
+    color: #bb8282;
+}
+.categories .cats{ 
+    padding:10px;  
+}
+.categories hr{
+    margin: 0px;
+}
+.categories .cats:hover .hidden-button{
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.categories .cats .hidden-button{
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: -130px;
+    a{
+        padding: 0 4px;
+        margin-right: 2px;
+    }
+}
+.categories .cats:last-of-type ~ hr{
+    display: none;
+}
+.categories .cats p{
+    margin-bottom: 10px;
+}
+.categories .cats span{
+    margin-right: 5px;
+    padding: 2px 3px;
+    border-radius: 8px;
+    color: #eee;
+    display: ruby;
+}
+.categories .cats .visibility{
+    background-color: #9f90a5;
+}
+.categories .cats .comments{
+    background-color: #72759b;
+}
+.categories .cats .ads{
+    background-color: #748889;
+}
+/* Categories end*/

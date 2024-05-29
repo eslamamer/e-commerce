@@ -1,0 +1,132 @@
+body{
+    background-color: #f4f4f4;
+    text-transform: capitalize;
+    }
+
+ h1{
+    color: #767f89;
+    margin: 2rem 0 1rem;
+ }
+
+.login{
+    width:40vw;
+    margin:200px auto;
+}
+
+.login input{
+    margin-bottom: 10px;
+}
+
+.login .form-control{
+    background-color: #e4e4e4
+}
+
+.login h4{
+    color: #888
+}
+
+@media (min-width : 990px){
+    .collapse{
+        position: relative;
+        .dropdown {
+            position: absolute;
+            right: 100px;
+        } 
+    }
+}
+.navbar{
+    position: sticky;
+    padding:0;
+    top: 0;
+    width: 100%;
+    display: block;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+/* profile page */
+.info .container .card .card-body :nth-child(odd):not(strong){
+    background-color: #eee;
+}
+
+.info .container .card .card-body p {
+    margin: 0;
+    padding: .5rem;
+}
+.info .container .card .card-body p strong{
+    display: inline-block;
+    width: 5rem;
+}
+.approving{
+    width: 55% !important;
+    height: 2rem;
+    padding: 4px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.date{
+    color: #777;
+    font-size: 10px;
+    float: right;
+}
+
+/* Style for the comment */
+
+.com-box .person{
+    margin: 2rem 0px 0 4rem;
+    padding: 0;
+    width: 10rem;
+}
+.com-box .person .photo{
+    width: 6rem;
+    border-radius: 3rem;
+}
+.com-box .person .name{
+    width: 6rem;
+}
+
+.com-box .comment span{
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.com-box .comment {
+    position: relative;
+    left: 2rem;
+    top: 2.2rem;
+    height: 6rem;
+    padding: 5px;
+    width: calc(100% - 18rem);
+    background-color: #efefef;
+    border-radius: 5px;
+    color: #555;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 1rem;
+
+}
+.com-box .comment::before{
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: 20px;
+    border-width: 12px;
+    border-style: solid;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: #e7e5e5;
+}
+
+.comments .card-body div{
+    border: solid 2px #999;
+    background-color: #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+/* ad */
+
+
