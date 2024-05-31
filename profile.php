@@ -16,7 +16,8 @@
                     echo '<p><strong>name</strong> : '.$data['Uname'].'</p>';
                     echo '<p><strong>e-mail</strong> : '.$data['email'].'</p>';
                     echo '<p><strong>full name</strong> : '.$data['full name'].'</p>';
-                    echo '<p><strong>date</strong> : '.$data['Registration Date'].'</p>';?>
+                    echo '<p><strong>date</strong> : '.$data['Registration Date'].'</p>';
+                    echo '<a href="edit.php" class="btn btn-primary w-100">edit information</a>';?>
                 </div>
             </div>
         </div>
@@ -44,7 +45,7 @@
                                     echo '<p class="card-text text-truncate">'.$item["description"].'</p>';
                                     echo '<p class="card-text">'.$item["price"].' $</p>';
                                     echo '<p class="card-text date">created : '.$item["add_date"].'</p>';
-                                    echo '<a href="#" class="btn btn-primary btn-block">Buy Now</a>';
+                                    echo '<a href="#" class="btn btn-primary">Buy Now</a>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
@@ -53,7 +54,7 @@
                         echo "<p>no ads existing for ".$userSession."</p>";
                     }?>
                     </div>
-                    <a class='btn btn-primary float-end' href='ads.php'>add ads</a>
+                    <a class='btn btn-primary w-100' href='ads.php'>add ads</a>
                 </div>
             </div>
         </div>

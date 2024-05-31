@@ -45,7 +45,7 @@ body{
 }
 
 /* profile page */
-.info .container .card .card-body :nth-child(odd):not(strong){
+.info .container .card .card-body :nth-child(odd):not(strong,a){
     background-color: #eee;
 }
 

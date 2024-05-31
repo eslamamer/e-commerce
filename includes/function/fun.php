@@ -15,7 +15,7 @@
 
      
 //function which get raws from any table orderd by selected field and optionaly make where restriction.
-    function getElement($table, $order, $fName = "", $value = null , $approved = null){
+    function getElement($table, $fOrder, $fName = "", $value = null , $approved = null){
         global $con;
         $where ="";
         $params = [];
@@ -26,7 +26,7 @@
         }else{
             $where = "where 1 $approved";
         }
-        $stmt = $con->prepare("select * from $table $where order by $order asc");
+        $stmt = $con->prepare("select * from $table $where order by $fOrder asc");
         $stmt->execute($params);
         $count = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if(count($count) == 1){
@@ -35,6 +35,7 @@
             $elements = $count;
         }
         return $elements;
+        exit();
     }
     
     //check registeration status value
