@@ -293,6 +293,7 @@
                     }
             echo '</div>';
         }elseif($do == 'delete'){
+            //echo '<script>alert("are you sure you want to delete this user ?")</script>';
             echo '<div class="container">';
             echo '<h1 class="text-center">Delete Member Data</h1>';
             $userId = isset($_GET['userid']) && is_numeric($_GET['userid']) ? intval($_GET['userid']) : 0;

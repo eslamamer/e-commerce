@@ -45,7 +45,7 @@
                                     echo '<p class="card-text text-truncate">'.$item["description"].'</p>';
                                     echo '<p class="card-text">'.$item["price"].' $</p>';
                                     echo '<p class="card-text date">created : '.$item["add_date"].'</p>';
-                                    echo '<a href="#" class="btn btn-primary">Buy Now</a>';
+                                    echo '<a href="item.php?id='.$item["item_id"].'" class="btn btn-primary">buy now</a>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';

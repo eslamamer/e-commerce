@@ -148,9 +148,10 @@ body{
 }
 
 .com-box .member {
+    width: 4rem;
     float: left;
     font-weight: bold;
-    margin: 0px 25px 0 0px;
+    margin: 0px 10px 0 0px;
     top: 5px;
     color: #6d6a6a;
     position: relative;
@@ -163,7 +164,7 @@ body{
     bottom: 0px;
     min-height: 4rem;
     padding: 5px;
-    width: calc(91% - 80px);
+    width: calc(100% - 7.5rem);
     background-color: #efefef;
     margin-bottom: 5px;
     border-radius: 5px;

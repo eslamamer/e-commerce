@@ -33,6 +33,10 @@
                                             echo "<span class = 'alert alert-danger ms-3'>watting for activation</span>";
                                             } ?>
                                         </a>
+                                        <a href="cart.php" class='text-decoration-none me-4'>
+                                            my cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </a>
                                 </span>
                             </div>
                             

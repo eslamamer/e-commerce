@@ -19,7 +19,7 @@
                                     echo '<p class="card-text text-truncate">'.$item["description"].'</p>';
                                     echo '<p class="card-text">'.$item["price"].' $</p>';
                                     echo '<p class="card-text date">issued: '.$item["add_date"].'</p>';
-                                    echo '<a href="#" class="btn btn-primary btn-block">Buy Now</a>';
+                                    echo '<a href="item.php?id='.$item["item_id"].'" class="btn btn-primary">buy now</a>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
@@ -32,8 +32,8 @@
                                     echo '<a href="item.php?id='.$items['item_id'].'" class ="text-decoration-none "><h4 class="card-title text-truncate">'.$items["name"].'</h4></a>';
                                     echo '<p class="card-text text-truncate">'.$items["description"].'</p>';
                                     echo '<p class="card-text">'.$items["price"].' $</p>';
-                                    echo '<p class="card-text date">issued: '.$item["add_date"].'</p>';
-                                    echo '<a href="#" class="btn btn-primary btn-block">Buy Now</a>';
+                                    echo '<p class="card-text date">issued: '.$items["add_date"].'</p>';
+                                    echo '<a href="item.php?id='.$item["item_id"].'" class="btn btn-primary">buy now</a>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</div>';
