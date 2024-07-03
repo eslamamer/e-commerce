@@ -34,18 +34,26 @@
         if(isset($_POST['quantity'])){
             $quantity = isset($_POST['quantity']) && is_numeric($_POST['quantity']) && $_POST['quantity'] > 0 ? intval($_POST['quantity']) : 1;
         }
-        if(isset($_POST['addCart'])){
-            $stmt = $con->prepare("
-                                    insert into
-                                                orders(item_id, member_id, pieces, total_price, date)
-                                                values(:aitem_id, :amember_id, :apieces, :atotal_price, NOW())
-            ");
-            $stmt->execute([
-                ':aitem_id'     => $item['item_id'],
-                ':amember_id'   => $_SESSION['uid'],
-                ':apieces'      => $quantity,
-                ':atotal_price' => $item['price']*$quantity
-            ]);
+        if(isset($_SESSION['uid'])){
+            if(isset($_POST['addCart'])){
+                $stmt = $con->prepare("
+                                        insert into
+                                                    orders(item_id, member_id, pieces, total_price, date)
+                                                    values(:aitem_id, :amember_id, :apieces, :atotal_price, NOW())
+                ");
+                $stmt->execute([
+                    ':aitem_id'     => $item['item_id'],
+                    ':amember_id'   => $_SESSION['uid'],
+                    ':apieces'      => $quantity,
+                    ':atotal_price' => $item['price']*$quantity
+                ]);
+            }
+            if($stmt){
+                $msg = '<p class="alert alert-info mt-3">item added, do you want to go to <a href="cart.php" class="info text-decoration-none">cart ?</a></p>';
+                redirect($msg, $sec = 5);
+            }
+         }else{
+            echo '<p class="alert alert-info mt-3 text-center">may you <a href="login.php">log in</a> or <a href="login.php?reg=signup">sign up</a> to add items to cart</p>';
         }
         if(isset($_SESSION['user'])  &&  isset($_POST['comment'])){
             $comment = htmlspecialchars($_POST['comment']);

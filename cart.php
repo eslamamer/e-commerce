@@ -34,8 +34,8 @@ if(isset($_SESSION['usernam']) || isset($_SESSION['user'])){
             $delOrder = $con->prepare("delete from orders where order_id = ? and member_id = ?");
             $delOrder->execute([$order_id, $_SESSION['uid']]);
             if($delOrder){
-                $erMmsg = '<div class="alert alert-info">'.$delOrder->rowCount().' order/s is deleted</div>';
-                redirect($erMmsg);
+                $erMmsg = '<div class="alert alert-info">'.$delOrder->rowCount().' order is deleted</div>';
+                redirect($erMmsg, sec:2);
             }
         }else{
             $erMmsg = '<div class="alert alert-danger">order not existed</div>';
